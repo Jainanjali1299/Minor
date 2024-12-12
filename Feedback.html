@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Feedback Form</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: rgba(201, 190, 34, 0.263);
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            margin: 0 20px;
+        }
+
+        .feedback-form h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .input-group input, .input-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .input-group textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        @media (max-width: 768px) {
+            .form-container {
+                padding: 20px;
+            }
+
+            .input-group input, .input-group textarea, .btn {
+                font-size: 14px;
+                padding: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .form-container {
+                padding: 15px;
+            }
+
+            .feedback-form h2 {
+                font-size: 18px;
+            }
+
+            .input-group input, .input-group textarea, .btn {
+                font-size: 12px;
+                padding: 6px;
+            }
+        }
+    </style>
+    <script>
+        function alertSubmit() {
+  alert('Your details were successfully received.');
+}
+    </script>
+</head>
+<body>
+
+    <div class="form-container">
+        <form class="feedback-form" id="feedbackForm">
+            <h2>Give Us Your Feedback</h2>
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+           
+
+ <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+                <label for="message">Feedback</label>
+                <textarea id="message" placeholder="Enter your feedback" required></textarea>
+            </div>
+            <button type="submit" class="btn" click in="sumbit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            
+            console.log('Name:', name);
+            console.log('Email:', email);
+            console.log('Feedback:', message);
+        });
+    </script>
+<button><a href="home.html">homepage</a></button>
+</body>
+</html>

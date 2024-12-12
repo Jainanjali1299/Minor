@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Rental</title>
+  <link rel="stylesheet" href="carimage.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+    .container {
+      width: 90%;
+      margin: auto;
+      padding: 20px;
+    }
+    .car-card {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 15px;
+      margin: 15px 0;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+    }
+    .car-image {
+      width: 150px;
+      height: 100px;
+      border-radius: 5px;
+      margin-right: 20px;
+    }
+    .car-details {
+      flex-grow: 1;
+    }
+    .car-details h3 {
+      margin: 0;
+      font-size: 1.2em;
+    }
+    .rating {
+      color: #ffa500;
+    }
+    .book-btn {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .book-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <!-- <div class="form-container">
+    <div class="tab-container">
+      <button class="tab active">Rental cars</button>
+      <button class="tab">Airport transportation</button>
+    </div>
+    <form class="rental-form">
+      <div class="input-group">
+        <label for="pickup-location"><a href="map.html">Pick-up</a></label>
+        <input type="text" id="pickup-location" placeholder="Pick-up">
+      </div>
+      <div class="input-group">
+        <label for="dropoff-location"><a href="map.html">Drop-off</a></label>
+        <input type="text" id="dropoff-location" placeholder="Same as pick-up">
+      </div>
+      <div class="input-group">
+        <label for="dates">Dates</label>
+        <input type="text" id="dates" placeholder="Dec 19 - Dec 20">
+      </div>
+      <div class="time-group">
+        <div class="input-group">
+          <label for="pickup-time">Pick-up time</label>
+          <select id="pickup-time">
+            <option>10:30am</option>
+            Add other time options as needed 
+           </select>
+        </div>
+        <div class="input-group">
+          <label for="dropoff-time">Drop-off time</label>
+          <select id="dropoff-time">
+            <option>10:30am</option>
+          </select>
+        </div>
+      </div> -->
+      <!-- <div class="button-group">
+        <button type="button" class="secondary-button">Show AARP rates</button>
+        <button type="button" class="secondary-button">Discount codes</button>
+      </div> 
+      <button type="submit" class="primary-button">Search</button>
+    </form>
+  </div> -->
+    <div class="car-card">
+      <img src="media/car 1.jpg" alt="Car 1" class="car-image">
+      <div class="car-details">
+        <h3>Audi</h3>
+        <p><span class="rating">★★★★☆</span> (4.5/5)</p>
+        <p>Rate: $50/day</p>
+        <button class="book-btn"><a href="Booking.html">Book Now</a></button>
+      </div>
+    </div>
+    <div class="car-card">
+      <img src="media/Subaru Ascent.png" alt="Car 2" class="car-image">
+      <div class="car-details">
+        <h3>Subaru Ascent</h3>
+        <p><span class="rating">★★★★★</span> (5/5)</p>
+        <p>Rate: $55/day</p>
+        <button class="book-btn"><a href="Booking.html">Book Now</a></button>
+      </div>
+    </div>
+    <div class="car-card">
+      <img src="media/car 2.jpg" alt="Car 3" class="car-image">
+      <div class="car-details">
+        <h3>Ford Mustang</h3>
+        <p><span class="rating">★★★★☆</span> (4.7/5)</p>
+        <p>Rate: $100/day</p>
+        <button class="book-btn"><a href="Booking.html">Book Now</a></button>
+      </div>
+    </div>
+    <div class="car-card">
+        <img src="media/car 3.jpg" alt="Car 3" class="car-image">
+        <div class="car-details">
+          <h3>Ford Mustang</h3>
+          <p><span class="rating">★★★★☆</span> (4.7/5)</p>
+          <p>Rate: $100/day</p>
+          <button class="book-btn"><a href="Booking.html">Book Now</a></button>
+        </div>
+      </div>
+      <div class="car-card">
+        <img src="media/car 4.jpg" alt="Car 3" class="car-image">
+        <div class="car-details">
+          <h3>Ford Mustang</h3>
+          <p><span class="rating">★★★★☆</span> (4.7/5)</p>
+          <p>Rate: $100/day</p>
+          <button class="book-btn"><a href="Booking.html">Book Now</a></button>
+        </div>
+      </div>
+      <div class="car-card">
+        <img src="media/car 5.jpg" alt="Car 3" class="car-image">
+        <div class="car-details">
+          <h3>Ford Mustang</h3>
+          <p><span class="rating">★★★★☆</span> (4.7/5)</p>
+          <p>Rate: $100/day</p>
+          <button class="book-btn"><a href="Booking.html">Book Now</a></button>
+        </div>
+      </div>
+      <div class="car-card">
+        <img src="media/car 6.jpg" alt="Car 3" class="car-image">
+        <div class="car-details">
+          <h3>Ford Mustang</h3>
+          <p><span class="rating">★★★★☆</span> (4.7/5)</p>
+          <p>Rate: $100/day</p>
+          <button class="book-btn"><a href="Booking.html">Book Now</a></button>
+        </div>
+      </div>
+      <div class="car-card">
+        <img src="media/car 7.jpg" alt="Car 3" class="car-image">
+        <div class="car-details">
+          <h3>Ford Mustang</h3>
+          <p><span class="rating">★★★★☆</span> (4.7/5)</p>
+          <p>Rate: $100/day</p>
+          <button class="book-btn"><a href="Booking.html">Book Now</a></button>
+        </div>
+      </div>
+      <div class="car-card">
+        <img src="media/car 8.jpg" alt="Car 3" class="car-image">
+        <div class="car-details">
+          <h3>Ford Mustang</h3>
+          <p><span class="rating">★★★★☆</span> (4.7/5)</p>
+          <p>Rate: $100/day</p>
+          <button class="book-btn"><a href="Booking.html">Book Now</a></button>
+        </div>
+      </div>
+      <div class="car-card">
+        <img src="media/car 9.jpg" alt="Car 3" class="car-image">
+        <div class="car-details">
+          <h3>Ford Mustang</h3>
+          <p><span class="rating">★★★★☆</span> (4.7/5)</p>
+          <p>Rate: $100/day</p>
+          <button class="book-btn"><a href="Booking.html">Book Now</a></button>
+        </div>
+      </div>
+      <div class="car-card">
+        <img src="media/car 10.jpg" alt="Car 3" class="car-image">
+        <div class="car-details">
+          <h3>Ford Mustang</h3>
+          <p><span class="rating">★★★★☆</span> (4.7/5)</p>
+          <p>Rate: $100/day</p>
+          <button class="book-btn"><a href="Booking.html">Book Now</a></button>
+        </div>
+      </div>
+      <div class="car-card">
+        <img src="media/car 11.jpg" alt="Car 3" class="car-image">
+        <div class="car-details">
+          <h3>Ford Mustang</h3>
+          <p><span class="rating">★★★★☆</span> (4.7/5)</p>
+          <p>Rate: $100/day</p>
+          <button class="book-btn"><a href="Booking.html">Book Now</a></button>
+        </div>
+      </div>
+      <div class="car-card">
+        <img src="media/car 12.jpg" alt="Car 3" class="car-image">
+        <div class="car-details">
+          <h3>Ford Mustang</h3>
+          <p><span class="rating">★★★★☆</span> (4.7/5)</p>
+          <p>Rate: $100/day</p>
+          <button class="book-btn"><a href="Booking.html">Book Now</a></button>
+        </div>
+      </div>
+      <div class="car-card">
+        <img src="media/car 13.jpg" alt="Car 3" class="car-image">
+        <div class="car-details">
+          <h3>Ford Mustang</h3>
+          <p><span class="rating">★★★★☆</span> (4.7/5)</p>
+          <p>Rate: $100/day</p>
+          <button class="book-btn"><a href="Booking.html">Book Now</a></button>
+        </div>
+      </div>
+      <div class="car-card">
+        <img src="media/car 14.jpg" alt="Car 3" class="car-image">
+        <div class="car-details">
+          <h3>Ford Mustang</h3>
+          <p><span class="rating">★★★★☆</span> (4.7/5)</p>
+          <p>Rate: $100/day</p>
+          <button class="book-btn"><a href="Booking.html">Book Now</a></button>
+        </div>
+      </div>
+      <div class="car-card">
+        <img src="media/car 15.jpg" alt="Car 3" class="car-image">
+        <div class="car-details">
+          <h3>Ford Mustang</h3>
+          <p><span class="rating">★★★★☆</span> (4.7/5)</p>
+          <p>Rate: $100/day</p>
+          <button class="book-btn"><a href="Booking.html">Book Now</a></button>
+        </div>
+      </div>
+      <div class="car-card">
+        <img src="media/car 16.jpg" alt="Car 3" class="car-image">
+        <div class="car-details">
+          <h3>Ford Mustang</h3>
+          <p><span class="rating">★★★★☆</span> (4.7/5)</p>
+          <p>Rate: $100/day</p>
+          <button class="book-btn"><a href="Booking.html">Book Now</a></button>
+        </div>
+      </div>
+  </div>
+  <div>
+  <button type="button"><a href="services.html"><b>our services</b></a></button>
+  <button type="button"><a href="about.html"> <b>About us</b></a></button>
+  </div>
+</body>
+</html>

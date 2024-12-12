@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Service</title>
+    <link rel="stylesheet" href="Booking.css">
+    <style>
+        body{
+            background-image: url(media/home.jpg);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="home">
+            <h2>Welcome to Our Car Rental Service</h2>
+            <p>Find the perfect car for your next trip!</p>
+        </section>
+        <section id="booking">
+            <h2>Book a Car</h2>
+            <form id="bookingForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="carModel">Car Model:</label>
+                <select id="carModel" name="carModel" required>
+                    <option value="sedan">Sedan</option>
+                    <option value="suv">SUV</option>
+                    <option value="hatchback">Hatchback</option>
+                </select>
+                
+                <label for="date">Booking Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Car Rental Service</p>
+    </footer>
+    <script src="booking.js"></script>
+    <button><a href="Feedback.html">Feedback</a></button>
+</body>
+</html>
